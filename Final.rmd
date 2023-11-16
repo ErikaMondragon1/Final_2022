@@ -83,9 +83,27 @@ Female is the categorical variable, covid921 vaccine administartion is an explan
 
 ### Graphical results
 
+```{r}
+barchartGC(~infected + treatment ,data=Females)
+barchartGC(~infected + treatment,data=Females, type="percent")
+
+```
+
 ### Numerical results
 
+```{r}
+table2 <- xtabs(~infected + treatment, data=Females)
+rowPerc(table2)
+colPerc(table2)
+```
+
 ### Inferentail results
+
+```{r}
+chisq.test(table2)
+chisqtestGC(table2)
+fisher.test(table2)
+```
 
 ## LGBTQ
 
