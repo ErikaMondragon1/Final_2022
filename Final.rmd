@@ -164,8 +164,26 @@ Druggies is the categorical variable, covid921 vaccine administartion is an expl
 
 ### Graphical results
 
+```{r}
+barchartGC(~infected + treatment ,data=Druggies)
+barchartGC(~infected + treatment,data=Druggies, type="percent")
+
+```
+
 ### Numerical results
 
+```{r}
+table4 <- xtabs(~infected + treatment, data=Druggies)
+rowPerc(table4)
+colPerc(table4)
+```
+
 ### Inferentail results
+
+```{r}
+chisq.test(table4)
+chisqtestGC(table4)
+fisher.test(table4)
+```
 
 # Overall Results and Conclusions
