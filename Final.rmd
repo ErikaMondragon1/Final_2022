@@ -42,11 +42,28 @@ Male is the categorical variable, covid921 vaccine administartion is an explanat
 ### Results
 
 ### Graphical results
+```{r}
+barchartGC(~infected + treatment ,data=Males)
+barchartGC(~infected + treatment,data=Males, type="percent")
+
+```
+
+
 
 ### Numerical results
 
-### Inferentail results
+```{r}
+table1 <- xtabs(~infected + treatment, data=Males)
+rowPerc(table1)
+colPerc(table1)
+```
 
+### Inferentail results
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 ## Females
 
 $H_0$:The covid921 vaccine does not exhibit a significant difference in effectivness between female populations.
