@@ -35,8 +35,9 @@ library(dplyr)
 Males = filter(FinalData, FinalData$sex == "M")
 ```
 
-
 ### Methods
+
+Male is the categorical variable, covid921 vaccine administartion is an explanatory variable. Covid921 effectiveness is a response variable is categorical. Therefore we use the helper file, Cat~Cat
 
 ### Results
 
@@ -47,6 +48,7 @@ Males = filter(FinalData, FinalData$sex == "M")
 ### Inferentail results
 
 ## Females
+
 $H_0$:The covid921 vaccine does not exhibit a significant difference in effectivness between female populations.
 
 $H_A$:The covid921 vaccine does exhibit a significant difference in effectiveness between female population
@@ -58,6 +60,8 @@ Females = filter(FinalData, FinalData$sex == "F")
 
 ### Methods
 
+Female is the categorical variable, covid921 vaccine administartion is an explanatory variable. Covid921 effectiveness is a response variable is categorical. Therefore we use the helper file, Cat~Cat
+
 ### Results
 
 ### Graphical results
@@ -67,6 +71,7 @@ Females = filter(FinalData, FinalData$sex == "F")
 ### Inferentail results
 
 ## LGBTQ
+
 $H_0$:The covid921 vaccine does not exhibit a significant difference in effectivness between LGBTQ populations.
 
 $H_A$:The covid921 vaccine does exhibit a significant difference in effectiveness between LGBTQ population
@@ -77,6 +82,8 @@ LGBTQ = filter(FinalData, FinalData$LGBTQ == "gay")
 ```
 ### Methods
 
+LGBTQ is the categorical variable, covid921 vaccine administartion is an explanatory variable. Covid921 effectiveness is a response variable is categorical. Therefore we use the helper file, Cat~Cat
+
 ### Results
 
 ### Graphical results
@@ -86,6 +93,7 @@ LGBTQ = filter(FinalData, FinalData$LGBTQ == "gay")
 ### Inferentail results
 
 ## Druggies
+
 $H_0$:The covid921 vaccine does not exhibit a significant difference in effectivness between druggies populations.
 
 $H_A$:The covid921 vaccine does exhibit a significant difference in effectiveness between druggies population
@@ -96,6 +104,9 @@ Druggies = filter(FinalData, FinalData$DrugUser == "yes")
 ```
 
 ### Methods
+
+Druggies is the categorical variable, covid921 vaccine administartion is an explanatory variable. Covid921 effectiveness is a response variable is categorical. Therefore we use the helper file, Cat~Cat
+
 
 ### Results
 
