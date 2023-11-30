@@ -48,7 +48,7 @@ barchartGC(~infected + treatment,data=Males, type="percent")
 
 ```
 
-
+The bar graph shows that the male recipients of the placebo had a greater rate of contracting COVID-19. In contrast to the male recipients of the 921 vaccination, who had a decreased risk of contracting COVID-19. Among the men who had covid 19, the male recipients of the COVID-19 vaccination, the risk of contracting the disease was significantly lower in those individuals. In contrast to the guys who were given a placebo, who were more likely to get COVID-19. In terms of the people who were never infected (OK), they have around similar percentages for both the placebo and vaccine. 
 
 ### Numerical results
 
@@ -58,12 +58,17 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
+This table shows that those who were infected by covid 19 and recived the vaccince have a 30.43% of getting covid after reciveing the vaccine. Those who got the placebo have a 69.57% of contracting covid 19. From those who were never infeected (OK), the ones that got the vaccine had a 49.52% of getting covid 19, the ones who recieved the placebo had a 50.48%.
+
 ### Inferentail results
 ```{r}
 chisq.test(table1)
 chisqtestGC(table1)
 fisher.test(table1)
 ```
+
+On the chi-squared test the p-value is  0.0000000000001098, which is less than 0.05 so we reject the null hypothesis. On the fisher test, the p-value is 0.00000000000004631, we reject the null hypothesis, which is, the covid921 vaccine does not exhibit a significant difference in effectiveness between male populations. The odds ratio shows that you are 2 times more likely to get of covid if you are male and dont get the vaccine
+
 ## Females
 
 $H_0$:The covid921 vaccine does not exhibit a significant difference in effectivness between female populations.
@@ -89,6 +94,8 @@ barchartGC(~infected + treatment,data=Females, type="percent")
 
 ```
 
+This bar graph shows that in Females, those who were inflected by covid 19 and got the placebo have a higher chance of getting covid than those who were infected and got the vaccine. Among the women who had covid 19, the recipients of the COVID-19 vaccination, the risk of contracting the disease was significantly lower in those individuals. In contrast to the guys who were given a placebo, who were more likely to get COVID-19. In terms of those who were never infected (OK), they have around similar percentages for both the placebo and vaccine. 
+
 ### Numerical results
 
 ```{r}
@@ -97,6 +104,8 @@ rowPerc(table2)
 colPerc(table2)
 ```
 
+According to this table, those who were infected with COVID-19 and received the vaccination have a 40% chance of contracting the disease again after receiving the shot. The chance of getting COVID-19 is 60% for those who received the placebo. Among individuals who never contracted the virus (OK), those who received the vaccination had a 49.88% chance of contracting COVID-19, whereas those who received a placebo had a 50.12% chance.
+
 ### Inferentail results
 
 ```{r}
@@ -104,6 +113,8 @@ chisq.test(table2)
 chisqtestGC(table2)
 fisher.test(table2)
 ```
+
+Since the p-value for the chi-squared test is 0.0002732, which is ess than 0.05, we may reject the null hypothesis. With a p-value of 0.0002162 on the Fisher test, we reject the null hypothesis, therefore, the covid921 vaccine does exhibit a significant difference in effectiveness between female population. According to the odds ratio, males who do not receive the vaccination have a 1.5 times increased risk of contracting COVID-19.
 
 ## LGBTQ
 
