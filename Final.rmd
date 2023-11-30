@@ -67,7 +67,7 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
-On the chi-squared test the p-value is  0.0000000000001098, which is less than 0.05 so we reject the null hypothesis. On the fisher test, the p-value is 0.00000000000004631, we reject the null hypothesis, which is, the covid921 vaccine does not exhibit a significant difference in effectiveness between male populations. The odds ratio shows that you are 2 times more likely to get of covid if you are male and dont get the vaccine
+On the chi-squared test the p-value is  0.0000000000001098, which is less than 0.05 so we reject the null hypothesis. On the fisher test, the p-value is 0.00000000000004631, we reject the null hypothesis, which is, the covid921 vaccine does not exhibit a significant difference in effectiveness between male populations. The odds ratio shows that you are 2.2 times more likely to get of covid if you are male and dont get the vaccine
 
 ## Females
 
@@ -161,11 +161,11 @@ chisqtestGC(table3)
 fisher.test(table3)
 ```
 
-Since the p-value for the chi-squared test is 0.00000006668, which is less than 0.05, we may reject the null hypothesis. With a p-value of 0.0000000109 on the Fisher test, we reject the null hypothesis, therefore,The covid921 vaccine does not exhibit a significant difference in effectiveness between LGBTQ populations. The odds ratio, those who do receive the vaccination have a 0.181 times increased risk of contracting COVID-19.
+Since the p-value for the chi-squared test is 0.00000006668, which is less than 0.05, we may reject the null hypothesis. With a p-value of 0.0000000109 on the Fisher test, we reject the null hypothesis, therefore,The covid921 vaccine does not exhibit a significant difference in effectiveness between LGBTQ populations. The odds ratio shows that those who do receive the vaccination have a 0.181 times increased risk of contracting COVID-19.
 
 ## Druggies
 
-$H_0$:The covid921 vaccine does not exhibit a significant difference in effectivness between druggies populations.
+$H_0$:The covid921 vaccine does not exhibit a significant difference in effectiveness between druggies populations.
 
 $H_A$:The covid921 vaccine does exhibit a significant difference in effectiveness between druggies population
 
@@ -189,6 +189,9 @@ barchartGC(~infected + treatment,data=Druggies, type="percent")
 
 ```
 
+According to this graph, druggies who had the vaccine 921were more likely to contract COVID-19, contrast to individuals who received a placebo, who were at a decreased risk of developing COVID-19. Vaccines do not work on drug addicts. Both the placebo and vaccination groups had a similar chance of contracting COVID-19 among individuals who never had it.
+
+
 ### Numerical results
 
 ```{r}
@@ -196,6 +199,9 @@ table4 <- xtabs(~infected + treatment, data=Druggies)
 rowPerc(table4)
 colPerc(table4)
 ```
+
+According to this data, the placebo group had an 11.67% risk of developing COVID-19. Contrasted with the 88.33% likelihood of getting covid among individuals who received the covid921. The individuals who received the placebo were far less likely than those who received the vaccination to get COVID-19. Those who never got covid, they both had an almost simlar chance of getting covid, with the placebo having 51.19$ and the vaccine-48.81%.
+
 
 ### Inferentail results
 
@@ -205,4 +211,7 @@ chisqtestGC(table4)
 fisher.test(table4)
 ```
 
+On the chi-squared test, the P value is 0.00000000284 ,which is less than 0.05, so we would reject the null hypothesis. On the fisher test, the P value is 0.000000000232,less than 0.05, so we reject the null hypothesis, The covid921 vaccine does not exhibit a significant difference in effectiveness between druggies populations. The odds ratio shows that it is 0.125 times more likely risk of contracting COVID-19 of those who do receive the vaccination.
+
 # Overall Results and Conclusions
+The orginal question was, is the covid 921 vaccine effective in the population subgroups by gender( males and females), drug use, and sexual orientation? In all of the popluation subgroups we rejected the null hypothesis. However in male and female 
