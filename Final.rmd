@@ -28,6 +28,7 @@ A new  preventative vaccine (covid921) is under test in clinical trials. Given t
 
 ## Males
 $H_0$:The covid921 vaccine does not exhibit a significant difference in effectiveness between male populations.
+
 $H_A$: The covid921 vaccine does exhibit a significant difference in effectiveness between male populations
 
 ```{r}
@@ -71,7 +72,7 @@ On the chi-squared test the p-value is  0.0000000000001098, which is less than 0
 
 ## Females
 
-$H_0$:The covid921 vaccine does not exhibit a significant difference in effectivness between female populations.
+$H_0$:The covid921 vaccine does not exhibit a significant difference in effectiveness between female populations.
 
 $H_A$:The covid921 vaccine does exhibit a significant difference in effectiveness between female population
 
@@ -200,7 +201,7 @@ rowPerc(table4)
 colPerc(table4)
 ```
 
-According to this data, the placebo group had an 11.67% risk of developing COVID-19. Contrasted with the 88.33% likelihood of getting covid among individuals who received the covid921. The individuals who received the placebo were far less likely than those who received the vaccination to get COVID-19. Those who never got covid, they both had an almost simlar chance of getting covid, with the placebo having 51.19$ and the vaccine-48.81%.
+According to this data, the placebo group had an 11.67% risk of developing COVID-19. Contrasted with the 88.33% likelihood of getting covid among individuals who received the covid921. The individuals who received the placebo were far less likely than those who received the vaccination to get COVID-19. Those who never got covid, they both had an almost similar chance of getting covid, with the placebo having 51.19$ and the vaccine-48.81%.
 
 
 ### Inferentail results
@@ -214,4 +215,13 @@ fisher.test(table4)
 On the chi-squared test, the P value is 0.00000000284 ,which is less than 0.05, so we would reject the null hypothesis. On the fisher test, the P value is 0.000000000232,less than 0.05, so we reject the null hypothesis, The covid921 vaccine does not exhibit a significant difference in effectiveness between druggies populations. The odds ratio shows that it is 0.125 times more likely risk of contracting COVID-19 of those who do receive the vaccination.
 
 # Overall Results and Conclusions
-The orginal question was, is the covid 921 vaccine effective in the population subgroups by gender( males and females), drug use, and sexual orientation? In all of the popluation subgroups we rejected the null hypothesis. However in male and female 
+
+The original question was, is the covid 921 vaccine effective in the population subgroups by gender( males and females), drug use, and sexual orientation? In all of the population subgroups, we rejected the null hypothesis.
+
+In the male population, since we reject the null hypothesis because the p-value is less than 0.05, based on the evidence we conclude that the covid921 vaccine does exhibit a significant difference in effectiveness between male populations.
+
+For the female population, we also reject the null hypothesis because the p-value is less than 0.05, we conclude that the covid921 vaccine does exhibit a significant difference in effectiveness between the female population.
+
+In the LGBTQ population, since we reject the null hypothesis because the p-value is less than 0.05, we accept that the covid921 vaccine does exhibit a significant difference in effectiveness between the LGBTQ population.
+
+In the druggies population, since we reject the null hypothesis because the p-value is less than 0.05, we conclude that the covid921 vaccine does exhibit a significant difference in effectiveness between the druggies population.
